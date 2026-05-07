@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maldives Paradise</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f9ff;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:rgba(0,0,0,0.5);
+color:white;
+z-index:1000;
+}
+
+nav h2{
+letter-spacing:2px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:100vh;
+background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#00c6ff;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+color:white;
+font-size:18px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#0094cc;
+}
+
+/* FEATURES */
+
+.features{
+padding:80px 10%;
+text-align:center;
+}
+
+.features h2{
+font-size:36px;
+margin-bottom:40px;
+}
+
+.cards{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:white;
+padding:30px;
+width:250px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* GALLERY */
+
+.gallery{
+padding:80px 10%;
+background:#eaf6ff;
+text-align:center;
+}
+
+.gallery h2{
+margin-bottom:40px;
+}
+
+.images{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.images img{
+width:100%;
+border-radius:10px;
+}
+
+/* CTA */
+
+.cta{
+padding:80px 10%;
+text-align:center;
+background:linear-gradient(120deg,#00c6ff,#0072ff);
+color:white;
+}
+
+.cta h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>Maldives</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#features">Experiences</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+<div>
+<h1>Welcome to Paradise</h1>
+<p>Experience crystal clear waters and tropical luxury</p>
+<button class="btn" onclick="bookNow()">Book Your Trip</button>
+</div>
+</section>
+<!-- ABOUT -->
+<section class="features">
+<h2>About Us</h2>
+<p>We help travelers explore the Maldives with the best resorts, experiences, and affordable travel packages.</p>
+</section>
+
+<!-- PACKAGES -->
+<section class="features">
+<h2>Popular Packages</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Basic Package</h3>
+<p>3 Days Stay + Breakfast</p>
+<p><b>₹50,000</b></p>
+</div>
+
+<div class="card">
+<h3>Premium Package</h3>
+<p>5 Days Stay + Scuba Diving</p>
+<p><b>₹90,000</b></p>
+</div>
+
+<div class="card">
+<h3>Luxury Package</h3>
+<p>7 Days Villa + All Activities</p>
+<p><b>₹1,50,000</b></p>
+</div>
+
+</div>
+</section>
+
+<!-- BOOKING FORM -->
+<section class="cta">
+<h2>Book Your Trip</h2>
+
+<form style="margin-top:20px;">
+<input type="text" placeholder="Your Name" required style="padding:10px;margin:5px;">
+<input type="email" placeholder="Email" required style="padding:10px;margin:5px;">
+<input type="date" style="padding:10px;margin:5px;">
+<br>
+<button class="btn">Submit</button>
+</form>
+
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="features">
+<h2>What Our Customers Say</h2>
+
+<div class="cards">
+
+<div class="card">
+<p>"Amazing experience! Best trip ever."</p>
+<h4>- Rahul</h4>
+</div>
+
+<div class="card">
+<p>"Beautiful resorts and great service."</p>
+<h4>- Priya</h4>
+</div>
+
+<div class="card">
+<p>"Loved every moment in Maldives!"</p>
+<h4>- Arjun</h4>
+</div>
+
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="features">
+<h2>FAQs</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Best time to visit?</h3>
+<p>November to April is the best season.</p>
+</div>
+
+<div class="card">
+<h3>Do I need visa?</h3>
+<p>No visa required for Indians (on arrival).</p>
+</div>
+
+<div class="card">
+<h3>Is it expensive?</h3>
+<p>We offer packages for all budgets.</p>
+</div>
+
+</div>
+</section>
+
+<!-- FEATURES -->
+
+<section class="features" id="features">
+<h2>Top Experiences</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🏝 Island Resorts</h3>
+<p>Stay in beautiful overwater villas surrounded by turquoise water.</p>
+</div>
+
+<div class="card">
+<h3>🤿 Scuba Diving</h3>
+<p>Explore vibrant coral reefs and marine life.</p>
+</div>
+
+<div class="card">
+<h3>🐠 Snorkeling</h3>
+<p>Discover underwater wonders with easy snorkeling tours.</p>
+</div>
+
+<div class="card">
+<h3>🌅 Sunset Cruises</h3>
+<p>Enjoy romantic sunset cruises with breathtaking views.</p>
+</div>
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+<h2>Explore Maldives</h2>
+
+<div class="images">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5">
+<img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b">
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+<h2>Plan Your Dream Vacation</h2>
+<p>Start your journey to paradise today</p>
+<br>
+<button class="btn" onclick="bookNow()">Reserve Now</button>
+</section>
+
+<footer id="contact">
+<p>© 2026 Maldives Travel | All Rights Reserved</p>
+<p>Contact us: info@maldivestravel.com | +960 123 4567</p>
+</footer>
+
+<script>
+
+function bookNow(){
+alert("Booking feature coming soon!");
+}
+
+</script>
+
+</body>
+</html>
