@@ -382,6 +382,16 @@
       word-break: break-word;
     }
 
+    .contact-card a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .contact-card a:hover span {
+      color: var(--accent);
+      transition: color 0.25s ease;
+    }
+
     footer {
       padding: 28px 24px;
       text-align: center;
@@ -470,6 +480,7 @@
         <h1>Hello, I'm Venu Gopal</h1>
         <p>Trainee in Full Stack Development with one year of hands-on learning and real project experience.</p>
         <button class="btn" onclick="scrollToSection('contact')">Hire Me</button>
+         <a href="./venugopal_resume.pdf" download><button class="btn">Download Resume</button></a>
       </div>
     </div>
   </div>
@@ -631,6 +642,14 @@
     <div class="contact-card">
       <strong>Email</strong>
       <span>dangerdhoni3@gmail.com</span>
+    </div>
+    <div class="contact-card">
+      <strong>GitHub</strong>
+      <a href="https://github.com/dangerdhoni3-cpu" target="_blank" rel="noopener"><span>github.com/dangerdhoni3-cpu</span></a>
+    </div>
+    <div class="contact-card">
+      <strong>LinkedIn</strong>
+      <a href="https://www.linkedin.com/in/k-venu-gopal?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener"><span>K Venu Gopal</span></a>
     </div>
     <!-- <div class="contact-card">
       <strong>Phone</strong>
